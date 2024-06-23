@@ -16,7 +16,7 @@ The project is using Playwright with Typescript and can initial work to pass par
 **How to run the project**
 
 In project's terminal type: npm run test:api
---
+
 This will trigger configuration in package.json > scripts
 and
 should run api tests via Webkit
