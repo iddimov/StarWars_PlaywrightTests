@@ -2,6 +2,7 @@ The project is using Playwright with Typescript and can initial work to pass par
 * Can contain different setup per environment (in the example is QA env.)
 * Can accept different parameters per environment
 * GitHub Actions compatible
+  
 **Dependencies**
 1. Install Node.JS
 2. Install VS Code
