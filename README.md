@@ -14,6 +14,7 @@ The project is using Playwright with Typescript and can initial work to pass par
 * In the terminal type: npm install --save-dev cross-env
 
 **How to run the project**
+
 In project's terminal type: npm run test:api
 --
 This will trigger configuration in package.json > scripts
