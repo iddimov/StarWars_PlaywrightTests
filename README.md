@@ -18,3 +18,33 @@ In project's terminal type: npm run test:api
 This will trigger configuration in package.json > scripts
 and
 should run api tests via Webkit
+
+To run it via Playwright UI:
+$env:ENV="qa"
+npx playwright test --ui
+
+--
+Example of Test Cases/Scenarios:
+
+People Endpoint:
+* Retrieve Luke Skywalker’s Information:
+* Send a GET request to the people endpoint: https://swapi.dev/api/people/1/.
+* Verify that the response contains the expected data (name, height, mass, etc.).
+Verify Films and Vehicles:
+* Check if Luke Skywalker appears in the specified films and vehicles.
+* Validate the film URLs and vehicle URLs.
+
+Planets Endpoint:
+* Retrieve Yavin IV’s Information:
+* Send a GET request to the planets endpoint: https://swapi.dev/api/planets/3/.
+Verify that the response contains the expected data (name, rotation period, climate, etc.).
+* Check Films and Residents:
+* Confirm that Yavin IV appears in the specified film.
+Validate the film URL and the absence of residents.
+
+Starships Endpoint:
+* Retrieve Death Star’s Information:
+* Send a GET request to the starships endpoint: https://swapi.dev/api/starships/9/.
+* Verify that the response contains the expected data (name, model, crew, etc.).
+Validate Hyperdrive Rating:
+* Ensure that the hyperdrive rating is within the expected range (e.g., between 0 and 5).
