@@ -1,6 +1,8 @@
-The project is using Playwright with Typescript and can initial work to pass parameters is done.
+The project is using Playwright with Typescript.
 * Can contain different setup per environment (in the example is QA env.)
 * Can accept different parameters per environment
+* Can accepts CSV test data
+* No auth in the project but it can be done as $ENV or a separate file
 * GitHub Actions compatible
 **Dependencies**
 1. Install Node.JS
@@ -24,7 +26,7 @@ $env:ENV="qa"
 npx playwright test --ui
 
 --
-Example of Test Cases/Scenarios:
+Example of Test Cases/Scenarios that can be added for comprehensive coverage:
 
 People Endpoint:
 * Retrieve Luke Skywalker’s Information:
